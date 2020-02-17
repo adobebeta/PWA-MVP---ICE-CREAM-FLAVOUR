@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="description" content="A daily wallet limitation management">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Pakao">
+<meta name="apple-mobile-web-app-title" content="Pakao">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="msapplication-starturl" content="/?utm_source=homescreen">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" type="image/png" href="icon.png" sizes="16x16">
+<link rel="icon" type="image/png" href="icon.png" sizes="32x32">
+<link rel="icon" type="image/png" href="icon.png" sizes="96x96">
+<link rel="apple-touch-icon" sizes="72x72" href="icon.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<meta name="theme-color" content="#ffc107">
+<link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+
+<meta name="generator" content="PWA Starter">
+</head>
+<body>
+
+<h1>Select Your Flavour</h1>
+<style>
+
+	body{
+	 background-image: url("https://img.freepik.com/free-vector/stars-could-sky-background-pastel-color_56745-159.jpg?size=626&ext=jpg");
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  font-family: 'Sriracha', cursive;
+
+		}
+		#icecream{
+			position: absolute;
+	top: 0px;
+	left: 0px;
+		}
+
+		#icecream2{
+			position: absolute;
+	top: 0px;
+	left: 200px;
+		}
+</style>
+
+<br><br><br><br><br><br><br><br>
+<br><br><br><br>
+
+<div>
+	<img src= "https://sv1.picz.in.th/images/2020/02/17/xxl831.png" alt="Smiley face" width="200px" >
+	
+</div>
+
+
+
+<div id="icecream" ontouchmove="myFunction(event,this)">
+	<img src= "https://sv1.picz.in.th/images/2020/02/17/xxPxvk.png" alt="Smiley face" width="200px" >
+</div>
+
+<div id="icecream2" ontouchmove="myFunction(event,this)">
+	<img src= "https://sv1.picz.in.th/images/2020/02/17/xxPu8D.png" alt="Smiley face" width="200px" >
+</div>
+
+
+
+
+<p><strong>Note:</strong> กินให้อร่อยนะคะ.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(event,el) {
+  var x = event.touches[0].clientX;
+  var y = event.touches[0].clientY;
+  //document.getElementById("icecream").innerHTML = x + ", " + y;
+
+
+
+  document.getElementById(el.id).style.top=(y-100)+"px";
+  document.getElementById(el.id).style.left=(x-100)+"px";
+
+  console.log(x);
+  console.log(y);
+  console.log(el.id);
+}
+
+
+// function myFunction2(event) {
+//   var x = event.touches[0].clientX;
+//   var y = event.touches[0].clientY;
+//   //document.getElementById("icecream").innerHTML = x + ", " + y;
+
+//   document.getElementById('icecream2').style.top=(y-100)+"px";
+//   document.getElementById('icecream2').style.left=(x-100)+"px";
+
+//   console.log(x);
+//   console.log(y);
+// }
+</script>
+
+</body>
+</html>
